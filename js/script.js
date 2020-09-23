@@ -7,6 +7,7 @@ Coded by Morgan Olsen, September 2020.
 
 // Amount of items per page, if ever needed to change.
 const itemsPerPage = 9;
+
 let searchField = document.querySelector('#search');
 let searchButton = document.querySelector('.student-search button');
 const pagination = document.querySelector('ul.link-list');
@@ -160,8 +161,9 @@ function search(list) {
 }
 
 addSearchBar();
-showPage(data, 1);
-addPagination(data);
+showPage(currentList, 1);
+addPagination(currentList);
+
 const firstPageButton = pagination.firstElementChild.firstElementChild;
 firstPageButton.className = 'active';
 
