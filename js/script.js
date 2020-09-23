@@ -73,7 +73,7 @@ function showPage(list, page) {
 
          const detailsDiv = createAppendElement(li, 'div', 'student-details');
 
-         const img = createAppendElement(detailsDiv, 'img', 'avatar', 'src', student.picture.thumbnail);
+         const img = createAppendElement(detailsDiv, 'img', 'avatar', 'src', student.picture.medium);
          img.alt = 'Profile Picture';
          createAppendElement(detailsDiv, 'h3', undefined, 'textContent', `${student.name.first} ${student.name.last}`);
          createAppendElement(detailsDiv, 'span', 'email', 'textContent', student.email);
